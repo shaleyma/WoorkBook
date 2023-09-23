@@ -1,9 +1,9 @@
 nombre = input ("¿cual es tu nombre?: ")
-print ("Bienvenido(a) a SAPITO SALTARIN\n")
+print ("\n" + nombre + ",Bienvenido(a) a SAPITO SALTARIN\n")
 print ("Tu mision sera llevar al sapito al otro lado del lago donde encontrara un tesoro\n")
 print ("*Reglas: Tendras opcion de ir hacia la {DERECHA} o {IZQUIERDA} si saltas de una hoja a otra y opcion de {SI} y {NO} si tienes que tomar una decision *\n")
-print ("*Recuerda: contestar las preguntas en MAYÃšSCULA y con la palabra indicada en cada opciÃ³n que se encuentra escrita tambiÃ©n en MAYÃšSCULA*\n")
-print ("**Indicaciones: Tendras que comer los insectos y caracoles que encuentres en el camino, estos te ayudaran a sobrevivir*\n")
+print ("*Recuerda: contestar las preguntas en MAYÃšSCULA*\n")
+print ("*Indicaciones: Tendras que comer los insectos y caracoles que encuentres en el camino, estos te ayudaran a sobrevivir*\n")
 print ("\n¡¡Es hora de comenzar la aventura!!\n")
 print (nombre + ",Tu sapito se encuentra en laprimera hoja\n")
 intento = 0
@@ -34,7 +34,7 @@ while (intento == 0):
                 while (intento == 0):
                     arma = input ("\n¿comeras el caracol que se encuentra en esta hoja?: ")
                     if arma == ("SI"):
-                        print ("\n !Has ganado mucha energia ¡Tienes un salto doble!\n")
+                        print ("\n !Has ganado mucha energia ¡puedes continuar!\n")
                         intento = -1
 
 
@@ -63,6 +63,8 @@ while (intento == 0):
                                         intento = -1
                                              
                                         
+                                        print ("\n" + nombre + ", Tu sapito pudo pasar a la siguiente hoja")
+
                                         
                                         intento = 0
                                         while (intento == 0):   
@@ -70,14 +72,14 @@ while (intento == 0):
                                             if accion == "derecha":       
                                                print("\n¡¡GANASTE!! " + nombre + "!" + " Te encuentras del otro lado y lograste conseguir el tesoro ¡¡FELICIDADES!!\n")
                                             elif accion == "izquierda":      
-                                                 print("\n¡Te has resbalado! " + nombre + "!" + "caíste al agua\n")
+                                                 print("\n PERDISTE:¡Te has resbalado! " + nombre + "!" + "caíste al agua\n")
                                             else:       
                                                  print("\n*Entrada inválida*")
                                                  intento = -1
                                                
                                     
                                     elif accion == "NO":       
-                                         print("\n No tienes energía suficiente para continuar \n")
+                                         print("\n PERDISTE: ¡No tienes energía suficiente para continuar! \n")
                                     else:        
                                         print("\n*Entrada inválida*")
                                         intento = -1
