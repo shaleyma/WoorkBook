@@ -20,8 +20,8 @@ while (intento == 0):
 
         intento = 0
         while (intento == 0):
-            color = input ("\n¿Quieres comer el insecto?: ")
-            if color == ("SI"):
+            accion = input ("\n¿Quieres comer el insecto?: ")
+            if accion == ("SI"):
                 print ("\n¡Has ganado enegia suficiente para continuar!\n")
                 intento = -1
 
@@ -32,8 +32,8 @@ while (intento == 0):
 
                 intento = 0
                 while (intento == 0):
-                    arma = input ("\n¿comeras el caracol que se encuentra en esta hoja?: ")
-                    if arma == ("SI"):
+                    accion = input ("\n¿comeras el caracol que se encuentra en esta hoja?: ")
+                    if accion == ("SI"):
                         print ("\n !Has ganado mucha energia ¡puedes continuar!\n")
                         intento = -1
 
@@ -92,14 +92,14 @@ while (intento == 0):
                                 print ("\n*Entrada invalida*")
 
 
-                    elif arma == ("NO"):
+                    elif accion == ("NO"):
                         print ("\nPERDISTE: No tienes energia suficiente para continuar ")
                         intento = -2
                     else:
                         print ("\n*Entrada invalida*")
 
 
-            elif color == ("NO"):
+            elif accion == ("NO"):
                 print ("\nPERDISTE: Has encontrado un obstaculo y no tienes energia suficiente para continuar" + nombre + "¡Has perdido energia al no comer el insecto! ")
                 intento = -2
             else:
